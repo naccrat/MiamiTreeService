@@ -1,1 +1,9 @@
-name: Affordable Tree Services Miami
+title: Affordable Tree Services Miami
+phone: (786) 882-6775
+
+collections:
+  services:
+    output: true
+
+include:
+  - _pages
