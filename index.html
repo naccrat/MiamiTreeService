@@ -1,11 +1,10 @@
 ---
 layout: default
-title: We provide high-quality tree services in the Miami, Fl area
+title: We provide high-quality tree services in Miami, Fl
 services: Tree Services, Tree Removal, Tree Trimming, Stump Removal, and more.
 meta_description: At Affordable Tree Services Miami we can help with any tree services needs you have including tree removal, tree trimming, and stump removal.
 ---
 
-<main>
   <div class="w-100 overflow-hidden bg-gray-100">
     <div class="container position-relative">
       <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/rental-property-stage.png);">
@@ -31,8 +30,8 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
           <h3 class="text-secondary">High-quality tree services for the Miami, Florida community</h3>
           <p>Our team commit is committed to ensuring that your trees are healthy, safe, and beautiful. We offer a wide range of services, including:</p>
           <ul>
-            <li><a href="tree-removal-services.html">Tree Removal</a></li>
-            <li>Tree Trimming</li>
+            <li><a href="/tree-removal-services/">Tree Removal</a></li>
+            <li><a href="/tree-trimming/">Tree Trimming</a></li>
             <li>Stump Removal</li>
             <li>Tree Pruning</li>
             <li>Stump Removal and Grinding</li>
@@ -44,37 +43,7 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
           <p>Our mission is to provide great service and attention to detail. If you typed into Google, "tree services near me" and landed on this page, let us help you with your needs. Contact us today to schedule a consultation with one of our certified arborists.</p>
         </div>
         <div class="col-lg-5 bg-gray-900 text-light py-4" data-aos="fade-down">
-          <p class="lead">FREE No Obligation Estimate!</p>
-          
-          <form class="row" 
-            name="contact" 
-            method="post" 
-            data-netlify-recaptcha="true" 
-            data-netlify="true">
-            
-            <div class="col-12">
-              
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Full Name *</label>
-                <input type="text" name="name" class="form-control form-control-lg p-3" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Phone Number *</label>
-                <input type="text" name="phone" class="form-control form-control-lg p-3" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email Address *</label>
-                <input type="email" name="email" class="form-control form-control-lg p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputMessage" class="form-label">Tell us about your tree service project *</label>
-                <textarea type="text" name="message" class="form-control form-control-lg p-3" id="exampleInputMessage"></textarea>
-              </div>
-              <div class="mb-3" data-netlify-recaptcha="true"></div>
-              <button type="submit" class="btn btn-light btn-xl">Submit</button>
-            </div>
-          </form>
+          {% include form.html %}
         </div>
       </div>
     </div>
@@ -335,4 +304,3 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
   </div>
 
   {% include cta.html %}
-</main>
