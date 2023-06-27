@@ -4,7 +4,7 @@ title: "Protecting Your Trees: A Guide to Recognizing Common Pests and Diseases 
 author: Affordable Tree Services Miami
 ---
 
-## Invaders Among the Leaves: Unmasking Common Tree Pests
+Invaders Among the Leaves: Unmasking Common Tree Pests
 In the tropical climate of Miami, our trees face a myriad of challenges, including unwanted visitors that can wreak havoc on their health and beauty. In this section, we'll uncover some of the most notorious pests that call Miami home, and equip you with the knowledge to recognize their signs and take appropriate action.
 
 ## The Royal Palm Bug: A Tiny Culprit with Big Appetite
