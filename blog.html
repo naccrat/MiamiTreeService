@@ -9,10 +9,10 @@ meta_description: Blog articles for Affordable Tree Services Miami
     <div class="container">
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-lg-10 col-xl-8 border-bottom border-dark pb-5 mb-5">
-          <h1 class="display-5 fw-bold ">{{ page.title }}</h1>
-          <ul>
+          <h1 class="display-5 fw-bold pb-5">{{ page.title }}</h1>
+          <ul class="list-unstyled">
             {% for post in site.posts %}
-              <li class="list-unstyled">
+              <li>
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 {{ post.excerpt }}
               </li>
