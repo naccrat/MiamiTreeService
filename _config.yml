@@ -21,8 +21,10 @@ btn-custom:
   hover-bg: "#1D7F52"
   hover-border-color: "#1D7F52"
 
+# Background color for the call to action box
 cta:
   bg: "#d8e6df"
-  
+
+# Background color for the form submission box 
 form: 
   bg: "#229155"
