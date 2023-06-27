@@ -3,48 +3,38 @@ layout: default
 title: We provide high-quality tree services in Miami, Fl
 services: Tree Services, Tree Removal, Tree Trimming, Stump Removal, and more.
 meta_description: At Affordable Tree Services Miami we can help with any tree services needs you have including tree removal, tree trimming, and stump removal.
+main-image: tree-services-landscaping.jpeg
 ---
-
-  <div class="w-100 overflow-hidden bg-gray-100">
-    <div class="container position-relative">
-      <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/tree-services-landscaping.jpeg);">
-      </div>
-      <div class="row">
-        <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-          <h1 class="display-3 fw-bold mt-5">{{ site.title }}</h1>
-          <h3>{{ page.services }}</h3>
-          <p class="lead">Call Now To Schedule a FREE Estimate!</p>
-          <a class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" href="tel:{{ site.phone }}">
-            Call Us {{ site.phone }}
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="py-vh-3 w-100 overflow-hidden">
     <div class="container">
       <div class="row d-flex ">
-        <div class="col-lg-7" data-aos="fade-down">
-          <h2 class="display-6">Welcome to Affordable Tree Services. Your one stop shop for all things tree services in Miami FL</h2>
+        <div class="col-lg-7">
+          <h2 class="display-6">Welcome to Affordable Tree Services. Your one stop shop for all things tree services in Miami Florida</h2>
           <h3 class="text-secondary">High-quality tree services for the Miami, Florida community</h3>
           <p>Our team commit is committed to ensuring that your trees are healthy, safe, and beautiful. We offer a wide range of services, including:</p>
-          <ul>
-            <li><a href="/tree-removal-services/">Tree Removal</a></li>
-            <li><a href="/tree-trimming/">Tree Trimming</a></li>
-            <li>Stump Removal</li>
-            <li>Tree Pruning</li>
-            <li>Stump Removal and Grinding</li>
-            <li>Aerating</li>
-            <li>Arborist Services</li>
-            <li>Lot Clearing</li>
-            <li>Emergency Tree Services</li>
-          </ul>
+
+          {% for cat in site.category-list %}  
+            <ul>
+              {% for page in site.pages %}
+                {% if page.resource == true %}
+                  {% for pc in page.categories %}
+                    {% if pc == cat %}
+                      <li class="p-1">
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                      </li>
+                    {% endif %}   <!-- cat-match-p -->
+                  {% endfor %}  <!-- page-category -->
+                {% endif %}   <!-- resource-p -->
+              {% endfor %}  <!-- page -->
+            </ul>
+            {% endfor %}  <!-- cat -->
+
           <p>Our mission is to provide great service and attention to detail. If you typed into Google, "tree services near me" and landed on this page, let us help you with your needs. Contact us today to schedule a consultation with one of our certified arborists.</p>
         </div>
-        <div class="col-lg-5 bg-gray-900 text-light py-4" data-aos="fade-down">
-          {% include form.html %}
-        </div>
+        <!-- col-lg-5 FORM-->
+        {% include form.html %}
+
       </div>
     </div>
   </div>
@@ -55,15 +45,15 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-12">
           <div class="row vw-100 px-0 py-vh-3 d-flex align-items-center scrollx">
             <div class="col-md-3 aos-init aos-animate" data-aos="fade-up">
-                <img src="img/tree-services-landscaping.jpeg" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+                <img src="img/tree-services-landscaping.jpeg" class="rounded shadow img-fluid" alt="An image of a nice landscaped front yard" width="512" height="341">
             </div>
     
             <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                <img src="img/tree-services-landscaping.jpeg" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
+                <img src="img/lawn-treatment.jpeg" class="img-fluid rounded shadow" alt="An image with open grass area with an empty table and chairs" width="1164" height="776">
             </div>
     
             <div class="col-md-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
-                <img src="img/tree-services-landscaping.jpeg" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+                <img src="img/tree-services-2.jpeg" class="rounded shadow img-fluid" alt="An image of a home with a large tree in front of it" width="512" height="341">
             </div>
           </div>
         </div>
@@ -84,9 +74,7 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-lg-6">
           <div class="row gx-5 d-flex">
             <div class="col-md-11">
-              <div style="background-image: url(img/airbnb-superhost-rentals.png);">
-              </div>
-              <img src="img/airbnb-superhost-rentals.png" class="shadow" width="100%"/>
+              <img src="img/arborist-services.jpeg" class="shadow" width="100%" alt="An image of an arborist kneeling down planting some flowers"/>
             </div>
           </div>
         </div>
@@ -101,9 +89,7 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-lg-6">
           <div class="row gx-5 d-flex">
             <div class="col-md-11">
-              <div class="" style="background-image: url(img/airbnb-superhost-rentals.png);">
-              </div>
-              <img src="img/airbnb-superhost-rentals.png" class="shadow" width="100%"/>
+              <img src="img/tree-removal.jpeg" class="shadow" width="100%" alt="an image of a machine that grinds up trees"/>
             </div>
           </div>
         </div>
@@ -131,9 +117,7 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-lg-6">
           <div class="row gx-5 d-flex">
             <div class="col-md-11">
-              <div style="background-image: url(img/airbnb-superhost-rentals.png);">
-              </div>
-              <img src="img/airbnb-superhost-rentals.png" class="shadow" width="100%"/>
+              <img src="img/tree-trimming-2.jpeg" class="shadow" width="100%" alt="an image of two men cleaning up tree branches that have been trimmed"/>
             </div>
           </div>
         </div>
@@ -148,9 +132,7 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-lg-6">
           <div class="row gx-5 d-flex">
             <div class="col-md-11">
-              <div class="" style="background-image: url(img/airbnb-superhost-rentals.png);">
-              </div>
-              <img src="img/airbnb-superhost-rentals.png" class="shadow" width="100%"/>
+              <img src="img/stump-grinding-removal.jpeg" class="shadow" width="100%" alt="an image of a stump grinding machine"/>
             </div>
           </div>
         </div>
@@ -183,9 +165,7 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-lg-6">
           <div class="row gx-5 d-flex">
             <div class="col-md-11">
-              <div style="background-image: url(img/airbnb-superhost-rentals.png);">
-              </div>
-              <img src="img/airbnb-superhost-rentals.png" class="shadow" width="100%"/>
+              <img src="img/lot-clearing-services-2.jpeg" class="shadow" width="100%" alt="an image of a person clearing a lot of tree debris"/>
             </div>
           </div>
         </div>
@@ -200,9 +180,7 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-lg-6">
           <div class="row gx-5 d-flex">
             <div class="col-md-11">
-              <div class="" style="background-image: url(img/airbnb-superhost-rentals.png);">
-              </div>
-              <img src="img/airbnb-superhost-rentals.png" class="shadow" width="100%"/>
+              <img src="img/emergency-tree-removal.jpeg" class="shadow" width="100%" alt="an image of a fallen tree"/>
             </div>
           </div>
         </div>
@@ -257,30 +235,16 @@ meta_description: At Affordable Tree Services Miami we can help with any tree se
         <div class="col-12 col-lg-12 py-5 text-center">
           <h3 class="fs-2 fw-light">Read our latest articles</h3>
         </div>
+        {% for post in site.posts limit:3 %}           
         <div class="col-md-6 col-lg-4 border-end aos-init aos-animate" data-aos="fade-up">
           <div class="d-flex">
             <div class="col-md-9 flex-fill">
-              <h3 class="h5 my-2"><a href="#">Protecting Your Trees: A Guide to Recognizing Common Pests and Diseases in Miami, FL</a></h3>
-              <p>Discover the most prevalent tree pests and diseases in Miami, FL, and learn how to identify their signs and symptoms. This comprehensive guide provides valuable insights into effective treatment options and highlights the importance of professional arborists in managing these issues.</p>
+              <h3 class="h5 my-2"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+              <p>{{ post.excerpt }}</p>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 border-end aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-          <div class="d-flex">
-            <div class="col-md-9 flex-fill">
-              <h3 class="h5 my-2"><a href="#">The Art of Hedge Trimming: Unlocking the Beauty of Pruned Hedges</a></h3>
-              <p>Unlock the secrets of professional hedge trimming in this comprehensive blog post. Learn the techniques, tools, and benefits of hedge pruning from expert arborists. Discover how hedge trimming can elevate the aesthetics of your landscape while ensuring the health and longevity of your hedges.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-          <div class="d-flex">
-            <div class="col-md-9 flex-fill">
-              <h3 class="h5 my-2"><a href="#">How to care for the 5 most popular trees in Miami, FL</a></h3>
-              <p>Discover the essential tips and techniques for caring for the 5 most popular trees in Miami, FL. From proper watering and fertilization to pruning and pest control, this blog article provides expert advice to ensure the health and vitality of your beloved trees in the vibrant Miami landscape.</p>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>

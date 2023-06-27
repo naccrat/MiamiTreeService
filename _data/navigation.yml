@@ -1,15 +1,14 @@
-- name: Home
-  link: /
-  new_window: false
-- name: Services
-  link: /services/
-  new_window: false
-- name: Locations
-  link: /locations/
-  new_window: false
-- name: Contact Us
-  link: /contact-us/
-  new_window: false
-- name: FAQ
-  link: /faq/
-  new_window: false
+- title: "Home"
+  link: "/"
+
+- title: "Services"
+  link: "/services/"
+
+- title: "Locations"
+  link: "/locations/"
+
+- title: "Articles"
+  link: "/blog/"
+
+- title: "Contact Us"
+  link: "/contact/"

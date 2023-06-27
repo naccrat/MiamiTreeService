@@ -2,3 +2,26 @@ title: Affordable Tree Services Miami
 phone: (786) 882-6775
 
 category-list: [services]
+
+# Privacy Policy and Terms of Service page
+state: Florida
+
+# Custom Navbar Colors
+navbar-colors:
+  bg: "#ffffff"
+  menu-color: "#000000"
+
+# Custom button colors
+btn-custom:
+  text-color: "#ffffff"
+  bg: "#229155"
+  border-color: "#229155"
+  hover-text-color: "#ffffff"
+  hover-bg: "#1D7F52"
+  hover-border-color: "#1D7F52"
+
+cta:
+  bg: "#d8e6df"
+  
+form: 
+  bg: "#229155"

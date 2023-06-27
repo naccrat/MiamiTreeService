@@ -3,33 +3,18 @@ layout: default
 permalink: /services/
 title: Services
 meta_description: Affordable Tree Services Miami can help you with all your tree services needs. Contact for any questions on our services and we'd love to work with you.
+main-image: tree-services-landscaping.jpeg
 ---
-
-<div class="w-100 overflow-hidden bg-gray-100">
-  <div class="container position-relative">
-    <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(../img/rental-property-stage.png);">
-    </div>
-    <div class="row">
-      <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-        <h1 class="display-3 fw-bold mt-5">{{ page.title }}</h1>
-        <p class="lead">Call Now To Schedule a FREE Estimate!</p>
-        <a class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" href="tel:{{ site.phone }}">
-          Call Us {{ site.phone }}
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="py-vh-3 w-100 overflow-hidden">
   <div class="container">
     <div class="row d-flex ">
-      <div class="col-lg-7" data-aos="fade-down">
-        {% for cat in site.category-list %}
+      <div class="col-lg-7">
+        
         <h2 class="display-6">
           We can help with all your tree services needs
         </h2>
-          
+        {% for cat in site.category-list %}  
         <ul class="list-unstyled">
           {% for page in site.pages %}
             {% if page.resource == true %}
@@ -45,9 +30,9 @@ meta_description: Affordable Tree Services Miami can help you with all your tree
         </ul>
         {% endfor %}  <!-- cat -->
       </div>
-      <div class="col-lg-5 bg-gray-900 text-light py-4" data-aos="fade-down">
-        {% include form.html %}
-      </div>
+      <!-- col-lg-5 FORM-->
+      {% include form.html %}
+
     </div>
   </div>
 </div>

@@ -1,3 +1,5 @@
+---
+---
 /*!
  * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -2212,6 +2214,22 @@ textarea.form-control-lg {
     border-color: var(--bs-btn-disabled-border-color);
     opacity: var(--bs-btn-disabled-opacity); }
 
+.btn-custom {
+  --bs-btn-color: {{ site.btn-custom.text-color }};
+  --bs-btn-bg: {{ site.btn-custom.bg }};
+  --bs-btn-border-color: {{ site.btn-custom.border-color }};
+  --bs-btn-hover-color: {{ site.btn-custom.hover-text-color }};
+  --bs-btn-hover-bg: {{ site.btn-custom.hover-bg }};
+  --bs-btn-hover-border-color: {{ site.btn-custom.hover-border-color }};
+  --bs-btn-focus-shadow-rgb: 56, 56, 56;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #111111;
+  --bs-btn-active-border-color: #101010;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(21, 21, 21, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #151515;
+  --bs-btn-disabled-border-color: #151515; }
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #151515;
@@ -2967,6 +2985,9 @@ textarea.form-control-lg {
 
 .tab-content > .active {
   display: block; }
+
+.navbar-custom { 
+  background-color: {{ site.navbar-colors.bg }}; }
 
 .navbar {
   --bs-navbar-padding-x: 0;
@@ -8909,7 +8930,8 @@ img {
 .navbar.scrolled {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: {{ site.colors.primary | default: '#ffffff' }};
+  /* background-color: rgba(255, 255, 255, 0.9); */ } 
 
 .display-big {
   font-size: 7rem; }
@@ -9054,6 +9076,12 @@ img {
 
 .bp-center {
   background-position: center center; }
+
+.bg-cta-custom {
+  background-color: {{ site.cta.bg }}; }
+
+.bg-form-custom {
+  background-color: {{ site.form.bg }}; }
 
 .bg-gray-100 {
   background-color: #f8f9fa; }

@@ -4,7 +4,25 @@
   {% include nav.html %}
   
   <main>
+    <div class="w-100 overflow-hidden bg-gray-100">
+      <div class="container-fluid position-relative">
+        <div class="col-12 col-lg-12 mt-0 h-100 position-absolute top-0 end-0 bg-cover" style="background-color: #000; background-image: url(/img/{{ page.main-image }}); opacity: 0.3;">
+        </div>
+        <div class="container">
+          <div class="col-lg-7 py-vh-6 position-relative">
+            <h1 class="display-3 fw-bold mt-5">{{ page.title }}</h1>
+            <h3>{{ page.services }}</h3>
+            <p class="lead">Call Now To Schedule a FREE Estimate!</p>
+            <a class="btn btn-custom btn-xl shadow me-3 rounded-0 my-2" href="tel:{{ site.phone }}">
+              Call Us {{ site.phone }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     {{ content }}
+
   </main>
   
   {% include footer.html %}
