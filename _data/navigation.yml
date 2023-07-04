@@ -1,14 +1,39 @@
 - title: "Home"
-  link: "/"
+  url: "/"
 
 - title: "Services"
-  link: "/services/"
+  url: "/services/"
+  sublinks:
+    - title: Tree Removal
+      url: "/tree-removal-services/"
+    - title: Tree Trimming
+      url: "/tree-trimming/"
+    - title: Arborist Service
+      url: "/arborist-service/"
+    - title: Emergency Tree Services
+      url: "/emergency-tree-services/"
+    - title: Lawn Aerating
+      url: "/lawn-aerating-services/"
+    - title: Stump Removal
+      url: "/stump-removal-services/"
+    - title: Tree Pruning
+      url: "/tree-pruning/"
+    - title: Lot Clearing
+      url: "/lot-clearing-service/"
+
 
 - title: "Locations"
-  link: "/locations/"
+  url: "/locations/"
+  sublinks: 
+  - title: All locations
+    url: "/locations/"
+  - title: Fort Fauderdale
+    url: "/tree-services-fort-lauderdale/"
+  - title: Pompano Beach
+    url: "/tree-removal-pompano-beach-fl/"
 
 - title: "Articles"
-  link: "/blog/"
+  url: "/blog/"
 
 - title: "Contact Us"
-  link: "/contact/"
+  url: "/contact/"
