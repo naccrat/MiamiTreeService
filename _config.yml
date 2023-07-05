@@ -4,6 +4,8 @@ phone: (786) 882-6775
 logo: logo-tree-services-miami.png
 logo-width: 170
 
+google-analytics: G-YYTPFMV119
+
 category-list: [services]
 
 # Privacy Policy and Terms of Service page
@@ -30,3 +32,19 @@ cta:
 # Background color for the form submission box 
 form: 
   bg: "#229155"
+
+# Local Business Schema
+schema:
+  # name: Same as title above
+  image: "https://miamiaffordabletreeservice.com/img/logo-tree-services-miami.png"
+  # telephone: Same as phone above
+  priceRange: "$$"
+  address:
+    city: "Miami"
+    state: "Florida"
+    country: "USA"
+    postalCode: "33101"
+  hours:
+    dayOfWeek: "Monday-Sunday"
+  # url: Same as url above
+# End Schema
