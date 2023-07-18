@@ -2,6 +2,7 @@
 layout: post
 title: "Protecting Your Trees: A Guide to Recognizing Common Pests and Diseases in Miami, FL"
 author: Affordable Tree Services Miami
+meta_description: "Invaders Among the Leaves: Unmasking Common Tree Pests"
 ---
 
 Invaders Among the Leaves: Unmasking Common Tree Pests

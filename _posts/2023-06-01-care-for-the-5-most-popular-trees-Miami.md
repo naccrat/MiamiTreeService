@@ -2,6 +2,7 @@
 layout: post
 title: "How to care for the 5 most popular trees in Miami, FL"
 author: Affordable Tree Services Miami
+meta_description: We will discuss the 5 most popular trees in Miami Florida, and how to care for them.
 ---
 
 Miami is home to a diverse range of trees, each with its own unique beauty and benefits. Some of the most popular trees in Miami include the Live Oak, Mahogany, Gumbo Limbo, Royal Poinciana, and Ficus. These trees can add a touch of elegance, shade, and color to any property. However, in order to thrive, these trees need proper care and maintenance.
