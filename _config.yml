@@ -36,6 +36,7 @@ form:
 
 # Local Business Schema
 schema:
+  type: LocalBusiness
   # name: Same as title above
   image: "https://miamiaffordabletreeservice.com/img/logo-tree-services-miami.png"
   # telephone: Same as phone above
