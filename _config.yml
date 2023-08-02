@@ -2,7 +2,7 @@ url: https://miamiaffordabletreeservice.com
 title: Affordable Tree Services Miami
 phone: (786) 882-6775
 logo: logo-tree-services-miami.png
-logo-width: 170
+logo-width: 160
 
 google-analytics: G-YYTPFMV119
 site-author: 325 Studio
@@ -14,7 +14,7 @@ state: Florida
 
 # Custom Navbar Colors
 navbar-colors:
-  bg: "#ffffff"
+  bg: "rgba(255,255,255,.7)"
   menu-color: "#000000"
 
 # Custom button colors
@@ -33,6 +33,10 @@ cta:
 # Background color for the form submission box 
 form: 
   bg: "#229155"
+
+navbar:
+  padding_top: 12px
+  padding_bottom: 12px
 
 # Local Business Schema
 schema:

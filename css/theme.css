@@ -8924,8 +8924,8 @@ img {
   background-position: center center; }
 
 .navbar {
-  padding-top: 32px;
-  padding-bottom: 32px; }
+  padding-top: {{ site.navbar.padding_top }};
+  padding-bottom: {{ site.navbar.padding_bottom }} }
 
 .navbar.scrolled {
   padding-top: 12px;

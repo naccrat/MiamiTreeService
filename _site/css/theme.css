@@ -2985,7 +2985,7 @@ textarea.form-control-lg {
   display: block; }
 
 .navbar-custom { 
-  background-color: #ffffff; }
+  background-color: rgba(255,255,255,.7); }
 
 .navbar {
   --bs-navbar-padding-x: 0;
@@ -8922,8 +8922,8 @@ img {
   background-position: center center; }
 
 .navbar {
-  padding-top: 32px;
-  padding-bottom: 32px; }
+  padding-top: 12px;
+  padding-bottom: 12px }
 
 .navbar.scrolled {
   padding-top: 12px;

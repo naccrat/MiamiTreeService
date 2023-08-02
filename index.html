@@ -10,7 +10,7 @@ main-image: tree-services-landscaping.jpeg
     <div class="container">
       <div class="row d-flex ">
         <div class="col-lg-7">
-          <h2 class="display-6">Welcome to Affordable Tree Services. Your one stop shop for all things tree services in Miami Florida</h2>
+          <h2 class="display-6">Welcome to Affordable Tree Services. Your one stop shop for tree services in Miami Florida</h2>
           <h3 class="text-secondary">High-quality tree services for the Miami, Florida community</h3>
           <p>Our team commit is committed to ensuring that your trees are healthy, safe, and beautiful. We offer a wide range of services, including:</p>
 
@@ -230,11 +230,11 @@ main-image: tree-services-landscaping.jpeg
           <h3 class="fs-2 fw-light">Read our latest articles</h3>
         </div>
         {% for post in site.posts limit:3 %}           
-        <div class="col-md-6 col-lg-4 border-end aos-init aos-animate" data-aos="fade-up">
+        <div class="col-md-6 col-lg-4 border-end">
           <div class="d-flex">
-            <div class="col-md-9 flex-fill">
+            <div class="p-3 flex-fill">
               <h3 class="h5 my-2"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              <p>{{ post.excerpt }}</p>
+              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
             </div>
           </div>
         </div>
