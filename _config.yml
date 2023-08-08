@@ -14,7 +14,7 @@ state: Florida
 
 # Custom Navbar Colors
 navbar-colors:
-  bg: "rgba(255,255,255,.7)"
+  bg: "rgba(255,255,255,.85)"
   menu-color: "#000000"
 
 # Custom button colors
