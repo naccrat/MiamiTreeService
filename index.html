@@ -5,252 +5,247 @@ services: Tree Services, Tree Removal, Tree Trimming, Stump Removal
 meta_description: At Affordable Tree Services Miami we can help with any tree services needs you have including tree removal, tree trimming, and stump removal.
 main-image: tree-services-landscaping.jpeg
 ---
-
-  <div class="py-vh-3 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex ">
-        <div class="col-lg-7">
-          <h2 class="display-6">Welcome to Affordable Tree Services. Your one stop shop for tree services in Miami Florida</h2>
-          <h3 class="text-secondary">High-quality tree services for the Miami, Florida community</h3>
-          <p>Our team is committed to ensuring that your trees are healthy, safe, and beautiful. We offer a wide range of services, including:</p>
-
-          {% for cat in site.category-list %}  
-            <ul>
-              {% for page in site.pages %}
-                {% if page.resource == true %}
-                  {% for pc in page.categories %}
-                    {% if pc == cat %}
-                      <li class="p-1">
-                        <a href="{{ page.url }}">{{ page.title }}</a>
-                      </li>
-                    {% endif %}   <!-- cat-match-p -->
-                  {% endfor %}  <!-- page-category -->
-                {% endif %}   <!-- resource-p -->
-              {% endfor %}  <!-- page -->
-            </ul>
-            {% endfor %}  <!-- cat -->
-
-          <p>Our mission is to provide great service and attention to detail. If you typed into Google, "tree services near me" and landed on this page, let us help you with your needs. Contact us today to schedule a consultation with one of our certified arborists.</p>
-        </div>
-        <!-- col-lg-5 FORM-->
-        {% include form.html %}
-
-      </div>
-    </div>
-  </div>
-
-  <div class="position-relative overflow-hidden w-100 bg-light">
-    <div class="container-fluid">
-      <div class="col-12">
-        <div class="row py-vh-3 align-items-center">
-          <div class="col-md-4 aos-init aos-animate" data-aos="fade-up">
-              <img src="img/tree-services-landscaping.jpeg" class="rounded shadow img-fluid" alt="An image of a nice landscaped front yard">
-          </div>
-          <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-              <img src="img/lawn-treatment.jpeg" class="rounded shadow img-fluid" alt="An image with open grass area with an empty table and chairs">
-          </div>
-          <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
-              <img src="img/tree-services-2.jpeg" class="rounded shadow img-fluid" alt="An image of a home with a large tree in front of it">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section One -->
-  <div class="py-vh-3 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-lg-6">
-          <h2 class="py-3">Tree Services Miami</h2>
-          <p>We understand the importance of trees to the Miami community and the environment. Our tree services aim to provide the best care for your trees. We take pride in offering a wide range of services that cater to your specific needs:</p>
-          <p>Our certified arborists are trained and equipped with the latest tools and techniques to handle any job. We believe in the value of communication and understanding your concerns to help you with solutions that fit your budget.</p>
-          <p>We focus on safety, efficiency, and environmental responsibility in all our operations. We make sure to cut our impact on your property and the surrounding areas. Trust us to take care of your trees and enhance the beauty and health of your landscape.</p>
-        </div>
-        <div class="col-lg-6">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/QP3HqFvEPmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section -->
-  <div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-lg-6">
-          <div class="row gx-5 d-flex">
-            <div class="col-md-11">
-              <img src="img/tree-removal.jpeg" class="shadow" width="100%" alt="an image of a machine that grinds up trees"/>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h2 class="py-3">Tree removal service</h2>
-          <p>When it comes to tree removal, safety is our top priority. We understand that sometimes trees need to be removed due to safety hazards, disease, or property damage. Our team is equipped to handle any tree removal job with efficiency and care.</p>
-          <p>We take great care to assess and develop a removal plan that minimizes risks and damage to your property. We use the latest equipment and techniques to remove trees of any size or complexity.</p>
-          <p>We'll answer any questions you may have and keep you informed throughout the removal process. Our team is also dedicated to environmental responsibility and will recycle and dispose of all materials in an eco-friendly manner.</p>
-          <p>At <strong>Tree Services Miami FL</strong>, we understand the importance of your property and the safety of your family. Contact us today to schedule a consultation with one of our experts and learn more about our tree removal services.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section Three -->
-  <div class="py-vh-3 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-lg-6">
-          <h2 class="py-3">Tree Trimming Service</h2>
-          <p>Our tree trimming service will help your trees be beautiful and healthy. Regular trimming can help prevent disease, promote healthy growth, and reduce safety hazards. We have the expertise to trim trees of all sizes and species.</p>
-          <p>We can assess your trees' needs and develop a custom trimming plan that fits your budget and schedule. Our team also takes care of debris removal, leaving your property clean.</p>
-          <p>At Affordable Tree Services Miami FL, we believe in the value of ongoing communication with our customers. We're committed to providing excellent service and ensuring your complete satisfaction.</p>
-        </div>
-        <div class="col-lg-6">
-          <div class="row gx-5 d-flex">
-            <div class="col-md-11">
-              <img src="img/tree-trimming-2.jpeg" class="shadow" width="100%" alt="an image of two men cleaning up tree branches that have been trimmed"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section Four -->
-  <div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-lg-6">
-          <div class="row gx-5 d-flex">
-            <div class="col-md-11">
-              <img src="img/stump-grinding-removal.jpeg" class="shadow" width="100%" alt="an image of a stump grinding machine"/>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h2 class="py-3">Stump Removal and stump grinding Service</h2>
-          <p>Stump removal is an important service that can improve the look and safety of your property. Stumps left in your yard can be a tripping hazard and can attract pests such as termites and ants.</p>
-          <p>Stump removal can be difficult and requires special equipment and expertise. Our team can safely perform the stump removal and grind it into mulch. You can then use the mulch for other landscaping projects.</p>
-          <p>Stump removal or grinding can be dangerous and requires specialized knowledge and equipment. At Tree Services Miami FL, our professionals have the training and experience to handle the job.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section Five -->
-  <div class="py-vh-3 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-lg-6">
-          <h2 class="py-3">Lot Clearing Service</h2>
-          <p>Our lot-clearing service is designed to help you prepare your property for new construction or landscaping. We have the expertise and equipment to clear residential and commercial properties.</p>
-          <p>Hire us for your next lot-clearing services. Here is what we can provide.</p>
+<div class="py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex ">
+      <div class="col-lg-7">
+        <h2 class="display-6">Welcome to Affordable Tree Services. Your one stop shop for tree services in Miami Florida</h2>
+        <h3 class="text-secondary">High-quality tree services for the Miami, Florida community</h3>
+        <p>Our team is committed to ensuring that your trees are healthy, safe, and beautiful. We offer a wide range of services, including:</p>
+        {% for cat in site.category-list %}  
           <ul>
-            <li>Professional lot clearing services to make your property look its best.</li>
-            <li>Safe and efficient land clearing using the latest equipment and techniques.</li>
-            <li>Experienced team to handle any size project, from small lots to large commercial properties.</li>
-            <li>Competitive pricing and free estimates to help you stay within your budget.</li>
-            <li>Licensed and insured for your peace of mind.</li>
+            {% for page in site.pages %}
+              {% if page.resource == true %}
+                {% for pc in page.categories %}
+                  {% if pc == cat %}
+                    <li class="p-1">
+                      <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                  {% endif %}{% endfor %}{% endif %}{% endfor %}
           </ul>
+          {% endfor %} 
+        <p>Our mission is to provide great service and attention to detail. If you typed into Google, "tree services near me" and landed on this page, let us help you with your needs. Contact us today to schedule a consultation with one of our certified arborists.</p>
+      </div>
+      <!-- col-lg-5 FORM-->
+      {% include form.html %}
+
+    </div>
+  </div>
+</div>
+
+<div class="position-relative overflow-hidden w-100 bg-light">
+  <div class="container-fluid">
+    <div class="col-12">
+      <div class="row py-vh-3 align-items-center">
+        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up">
+            <img src="img/tree-services-landscaping.jpeg" class="rounded shadow img-fluid" alt="An image of a nice landscaped front yard">
         </div>
-        <div class="col-lg-6">
-          <div class="row gx-5 d-flex">
-            <div class="col-md-11">
-              <img src="img/lot-clearing-services-2.jpeg" class="shadow" width="100%" alt="an image of a person clearing a lot of tree debris"/>
-            </div>
+        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/lawn-treatment.jpeg" class="rounded shadow img-fluid" alt="An image with open grass area with an empty table and chairs">
+        </div>
+        <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
+            <img src="img/tree-services-2.jpeg" class="rounded shadow img-fluid" alt="An image of a home with a large tree in front of it">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section One -->
+<div class="py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <h2 class="py-3">Tree Services Miami</h2>
+        <p>We know that trees are an important part of the Miami community and the environment. That's why we offer a wide range of tree services to help you keep your trees healthy and beautiful.</p>
+        <p>Our arborists are certified professionals with the latest tools and techniques. We can handle any job, big or small. And we know that budgets can be tight, so we'll work with you to find an affordable solution that meets your needs.</p>
+        <p>We prioritize safety, efficiency, and environmental responsibility in all of our tree services. We'll never cut corners that could put your property or the environment at risk.</p>
+        <p>Trust us to take care of your trees and enhance the beauty of your landscape. We're here to help you with all of your tree care needs.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/QP3HqFvEPmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section -->
+<div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <div class="row gx-5 d-flex">
+          <div class="col-md-11">
+            <img src="img/tree-removal.jpeg" class="shadow" width="100%" alt="an image of a machine that grinds up trees"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="py-3">Tree removal service</h2>
+        <p>When it comes to tree removal, safety is our top priority. We understand that sometimes trees need to be removed due to safety hazards, disease, or property damage. Our team is equipped to handle any tree removal job with efficiency and care.</p>
+        <p>We take great care to assess and develop a removal plan that minimizes risks and damage to your property. We use the latest equipment and techniques to remove trees of any size or complexity.</p>
+        <p>We'll answer any questions you may have and keep you informed throughout the removal process. Our team is also dedicated to environmental responsibility and will recycle and dispose of all materials in an eco-friendly manner.</p>
+        <p>At <strong>Tree Services Miami FL</strong>, we understand the importance of your property and the safety of your family. Contact us today to schedule a consultation with one of our experts and learn more about our tree removal services.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section Three -->
+<div class="py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <h2 class="py-3">Tree Trimming Service</h2>
+        <p>Our tree trimming service will help your trees be beautiful and healthy. Regular trimming can help prevent disease, promote healthy growth, and reduce safety hazards. We have the expertise to trim trees of all sizes and species.</p>
+        <p>We can assess your trees' needs and develop a custom trimming plan that fits your budget and schedule. Our team also takes care of debris removal, leaving your property clean.</p>
+        <p>At Affordable Tree Services Miami FL, we believe in the value of ongoing communication with our customers. We're committed to providing excellent service and ensuring your complete satisfaction.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row gx-5 d-flex">
+          <div class="col-md-11">
+            <img src="img/tree-trimming-2.jpeg" class="shadow" width="100%" alt="an image of two men cleaning up tree branches that have been trimmed"/>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Section Six -->
-  <div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-lg-6">
-          <div class="row gx-5 d-flex">
-            <div class="col-md-11">
-              <img src="img/emergency-tree-removal.jpeg" class="shadow" width="100%" alt="an image of a fallen tree"/>
-            </div>
+<!-- Section Four -->
+<div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <div class="row gx-5 d-flex">
+          <div class="col-md-11">
+            <img src="img/stump-grinding-removal.jpeg" class="shadow" width="100%" alt="an image of a stump grinding machine"/>
           </div>
         </div>
-        <div class="col-lg-6">
-          <h2 class="py-3">Emergency Tree Services</h2>
-          <p>We are aware that storms and hurricanes come in and disrupt our lives. Sometimes they cause damage to our trees. Emergency tree services are critical when trees pose an immediate threat to property or safety. At Tree Services Miami FL, we offer 24/7 emergency tree services to handle any situation that may arise.</p>
-          <p>Our team is equipped to handle all types of emergencies, including:</p>
-          <ul>
-            <li>Storm damage</li>
-            <li>Fallen trees</li>
-            <li>Hazardous tree removal</li>
-          </ul>
-          <p>We'll arrive promptly at your property to assess the situation. We will then develop a plan to minimize risks and damage.</p>
-          <p>During any emergency, we will take great care to ensure the safety of our customers and their property. We are here to give you peace of mind during times of emergency.</p>
-        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="py-3">Stump Removal and stump grinding Service</h2>
+        <p>Stump removal is an important service that can improve the look and safety of your property. Stumps left in your yard can be a tripping hazard and can attract pests such as termites and ants.</p>
+        <p>Stump removal can be difficult and requires special equipment and expertise. Our team can safely perform the stump removal and grind it into mulch. You can then use the mulch for other landscaping projects.</p>
+        <p>Stump removal or grinding can be dangerous and requires specialized knowledge and equipment. At Tree Services Miami FL, our professionals have the training and experience to handle the job.</p>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Section Seven -->
-  <div class="py-vh-2 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-8">
-          <h2 class="py-3">Tree Pruning Service</h2>
-          <p>Tree pruning is an important part of maintaining healthy and beautiful trees. Our tree pruning service will promote healthy growth, prevent disease, and reduce safety hazards.</p>
-          <p>As with all our services, we will create a custom plan for pruning your trees. One that will fit your schedule and budget. We also remove all debris and make sure your property is clean.</p>
-          
-          <h2 class="py-3">Arborist Service</h2>
-          <p>Our arborist service will provide expert advice on all the details of tree care. Our certified arborists have the expertise to assess your trees' health. They can diagnose diseases and pests and help you create a plan to take action.</p>
-          <p>We take great care to prioritize the health and longevity of your trees. Our team uses the latest techniques to promote healthy growth, prevent disease, and reduce safety hazards.</p>
-
-          <h2 class="py-3">Aerating Service</h2>
-          <p>Aerating is an essential part of lawn care that helps promote healthy grass growth. Our aerating service creates small holes in your lawn to allow air, water, and nutrients to penetrate the soil more effectively. This helps promote root growth and improves the health and appearance of your lawn.</p>
-          <p>Here are some of the benefits of aerating your lawn.</p>
-          <ul>
-            <li>Professional aeration services to help maintain a healthy lawn.</li>
-            <li>Using the best equipment, our team can quickly and effectively aerate your lawn.</li>
-            <li>Aeration can help improve soil compaction, reduce thatch, and promote root growth.</li>
-            <li>We always offer free estimates with no obligation.</li>
-            <li>We offer competitive pricing to help you stay within your budget.</li>
-            <li>Our team is licensed and insured for your peace of mind.</li>
-          </ul>
-        </div>
+<!-- Section Five -->
+<div class="py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <h2 class="py-3">Lot Clearing Service</h2>
+        <p>Our lot-clearing service is designed to help you prepare your property for new construction or landscaping. We have the expertise and equipment to clear residential and commercial properties.</p>
+        <p>Hire us for your next lot-clearing services. Here is what we can provide.</p>
+        <ul>
+          <li>Professional lot clearing services to make your property look its best.</li>
+          <li>Safe and efficient land clearing using the latest equipment and techniques.</li>
+          <li>Experienced team to handle any size project, from small lots to large commercial properties.</li>
+          <li>Competitive pricing and free estimates to help you stay within your budget.</li>
+          <li>Licensed and insured for your peace of mind.</li>
+        </ul>
       </div>
-    </div>
-  </div>
-
-  <div class="small bg-gray-100 py-vh-3 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-12 py-5 text-center">
-          <h3 class="fs-2 fw-light">Read our latest articles</h3>
-        </div>
-        {% for post in site.posts limit:3 %}           
-        <div class="col-md-6 col-lg-4 border-end">
-          <div class="d-flex">
-            <div class="p-3 flex-fill">
-              <h3 class="h5 my-2"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-            </div>
+      <div class="col-lg-6">
+        <div class="row gx-5 d-flex">
+          <div class="col-md-11">
+            <img src="img/lot-clearing-services-2.jpeg" class="shadow" width="100%" alt="an image of a person clearing a lot of tree debris"/>
           </div>
         </div>
-        {% endfor %}
       </div>
     </div>
   </div>
-  <div class="small py-vh-1 w-100 overflow-hidden">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-12 py-5 text-center">
-          <h5><a href="/services/" class="link-fancy">See a list of our tree service locations</a></h5>
-          <p class="fw-light"><a href="https://www.kissimmeeaffordabletreeservice.com/" target="_blank" class="link-fancy">Kissimmee Affordable Tree Service</a></p>
+</div>
+
+<!-- Section Six -->
+<div class="py-vh-3 bg-gray-100 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <div class="row gx-5 d-flex">
+          <div class="col-md-11">
+            <img src="img/emergency-tree-removal.jpeg" class="shadow" width="100%" alt="an image of a fallen tree"/>
+          </div>
         </div>
       </div>
+      <div class="col-lg-6">
+        <h2 class="py-3">Emergency Tree Services</h2>
+        <p>We are aware that storms and hurricanes come in and disrupt our lives. Sometimes they cause damage to our trees. Emergency tree services are critical when trees pose an immediate threat to property or safety. At Tree Services Miami FL, we offer 24/7 emergency tree services to handle any situation that may arise.</p>
+        <p>Our team is equipped to handle all types of emergencies, including:</p>
+        <ul>
+          <li>Storm damage</li>
+          <li>Fallen trees</li>
+          <li>Hazardous tree removal</li>
+        </ul>
+        <p>We'll arrive promptly at your property to assess the situation. We will then develop a plan to minimize risks and damage.</p>
+        <p>During any emergency, we will take great care to ensure the safety of our customers and their property. We are here to give you peace of mind during times of emergency.</p>
+      </div>
     </div>
   </div>
+</div>
 
-  {% include cta.html %}
+<!-- Section Seven -->
+<div class="py-vh-2 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-8">
+        <h2 class="py-3">Tree Pruning Service</h2>
+        <p>Tree pruning is an important part of maintaining healthy and beautiful trees. Our tree pruning service will promote healthy growth, prevent disease, and reduce safety hazards.</p>
+        <p>As with all our services, we will create a custom plan for pruning your trees. One that will fit your schedule and budget. We also remove all debris and make sure your property is clean.</p>
+        
+        <h2 class="py-3">Arborist Service</h2>
+        <p>Our arborist service will provide expert advice on all the details of tree care. Our certified arborists have the expertise to assess your trees' health. They can diagnose diseases and pests and help you create a plan to take action.</p>
+        <p>We take great care to prioritize the health and longevity of your trees. Our team uses the latest techniques to promote healthy growth, prevent disease, and reduce safety hazards.</p>
+
+        <h2 class="py-3">Aerating Service</h2>
+        <p>Aerating is an essential part of lawn care that helps promote healthy grass growth. Our aerating service creates small holes in your lawn to allow air, water, and nutrients to penetrate the soil more effectively. This helps promote root growth and improves the health and appearance of your lawn.</p>
+        <p>Here are some of the benefits of aerating your lawn.</p>
+        <ul>
+          <li>Professional aeration services to help maintain a healthy lawn.</li>
+          <li>Using the best equipment, our team can quickly and effectively aerate your lawn.</li>
+          <li>Aeration can help improve soil compaction, reduce thatch, and promote root growth.</li>
+          <li>We always offer free estimates with no obligation.</li>
+          <li>We offer competitive pricing to help you stay within your budget.</li>
+          <li>Our team is licensed and insured for your peace of mind.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="small bg-gray-100 py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12 py-5 text-center">
+        <h3 class="fs-2 fw-light">Read our latest articles</h3>
+      </div>
+      {% for post in site.posts limit:3 %}           
+      <div class="col-md-6 col-lg-4 border-end">
+        <div class="d-flex">
+          <div class="p-3 flex-fill">
+            <h3 class="h5 my-2"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="small py-vh-1 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-12 py-5 text-center">
+        <h5><a href="/services/" class="link-fancy">See a list of our tree service locations</a></h5>
+        <p class="fw-light"><a href="https://www.kissimmeeaffordabletreeservice.com/" target="_blank" class="link-fancy">Kissimmee Affordable Tree Service</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include cta.html %}
